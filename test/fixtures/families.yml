@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  sponsored: 
+  sponsor_being: 2010-06-10
+  sponsor_expire: 2010-06-10
+
+two:
+  name: MyString
+  sponsored: 
+  sponsor_being: 2010-06-10
+  sponsor_expire: 2010-06-10

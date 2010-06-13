@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  child_id: 1
+  img_url: MyString
+  gps: MyString
+  taken: 2010-06-10
+  notes: MyText
+
+two:
+  child_id: 1
+  img_url: MyString
+  gps: MyString
+  taken: 2010-06-10
+  notes: MyText

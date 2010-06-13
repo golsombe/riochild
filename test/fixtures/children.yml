@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  first: John
+  last: Doe
+  age: 7
+  gender: M
+  sponsor_being: 2010-06-10
+  sponsor_expire: 2010-08-10
+  description: This is a longer string
+
+two:
+  first: Jane
+  last: Doe
+  age: 7
+  gender: F
+  sponsor_being: 2010-06-10
+  sponsor_expire: 2010-09-10
+  description: asdfasdfasfdsafd
