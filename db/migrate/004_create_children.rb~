@@ -1,13 +1,10 @@
 class CreateChildren < ActiveRecord::Migration
   def self.up
     create_table :children do |t|
-      t.string :first
-      t.string :last
-      t.integer :age
-      t.string :gender
+      t.string :first, :last, :gender, :class, :village, :teacher,:sponsor_code
+      t.integer :age, :grade
       t.tinyint :sponsored
-      t.date :sponsor_being
-      t.date :sponsor_expire
+      t.date :sponsor_being, :sponsor_expire
       t.text :description
 
       t.timestamps

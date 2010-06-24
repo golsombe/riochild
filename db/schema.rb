@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100612155714) do
+ActiveRecord::Schema.define(:version => 20100623023202) do
 
   create_table "child_images", :force => true do |t|
     t.integer  "child_id"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20100612155714) do
     t.string   "photograph_content_type"
     t.integer  "photograph_file_size"
     t.datetime "photograph_updated_at"
+    t.integer  "photograph_primary"
   end
 
   create_table "child_updates", :force => true do |t|
@@ -34,7 +35,7 @@ ActiveRecord::Schema.define(:version => 20100612155714) do
     t.string   "first"
     t.string   "last"
     t.string   "gender"
-    t.string   "class"
+    t.string   "class_room"
     t.string   "village"
     t.string   "teacher"
     t.string   "sponsor_code"

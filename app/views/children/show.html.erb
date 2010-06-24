@@ -1,0 +1,9 @@
+ <%= image_tag @record.child_images.find(:first).photograph.url(:large), :width=> "30%" %>
+<p>
+My name is <%= @record.name %> and I'm <%=@record.age.to_s%> years old. I'm a little <%=if @record.gender=='F' then 'girl' else 'boy' end %> living in <%=@record.village %>. <br>I'm in the <%=@record.grade.ordinalize rescue nil %> and go to school in my <%=@record.class_room %> class. My teacher is <%=@record.teacher %>. 
+<div>
+	<div style="width:45%;float:left"><%=render :active_scaffold => "child_updates", :label => "Updates", :constraints=> {:child_id => @record.id} %> </div>
+	<div style="width:45%;float:right"><%=render :active_scaffold => "child_images", :label=>"Images", :constraints => {:child_id => @record.id} %></div>
+</div>
+
+

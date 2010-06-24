@@ -7,7 +7,6 @@ active_scaffold :child_update do |config|
 		config.delete.link = false
 		config.search.link = false
 		config.columns[:notes].set_link 'show_note'
-		config.columns[:notes].link.popup=true
 		config.label = 'Updates'
 	end
 def show_note

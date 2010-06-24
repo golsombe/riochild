@@ -16,7 +16,7 @@ def conditions_for_collection
 end
 
 def show_image
-	@record = ChildImage.find(:first, :conditions=> ['id=?',params[:id]])
+	@record = ChildImage.find(:first, :conditions=> ['id=?',params[:id]]
 end
 
 end
