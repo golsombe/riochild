@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100623023202) do
+ActiveRecord::Schema.define(:version => 20100629024852) do
 
   create_table "child_images", :force => true do |t|
     t.integer  "child_id"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20100623023202) do
     t.string   "photograph_content_type"
     t.integer  "photograph_file_size"
     t.datetime "photograph_updated_at"
-    t.integer  "photograph_primary"
+    t.integer  "photograph_primary",      :limit => 1
   end
 
   create_table "child_updates", :force => true do |t|
@@ -35,13 +35,13 @@ ActiveRecord::Schema.define(:version => 20100623023202) do
     t.string   "first"
     t.string   "last"
     t.string   "gender"
-    t.string   "class_room"
+    t.string   "classroom"
     t.string   "village"
     t.string   "teacher"
     t.string   "sponsor_code"
     t.integer  "age"
     t.integer  "grade"
-    t.date     "sponsor_being"
+    t.date     "sponsor_begin"
     t.date     "sponsor_expire"
     t.text     "description"
     t.datetime "created_at"
@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(:version => 20100623023202) do
 
   create_table "families", :force => true do |t|
     t.string   "name"
-    t.date     "sponsor_being"
+    t.date     "sponsor_begin"
     t.date     "sponsor_expire"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -73,6 +73,7 @@ ActiveRecord::Schema.define(:version => 20100623023202) do
     t.string   "photograph_content_type"
     t.integer  "photograph_file_size"
     t.datetime "photograph_updated_at"
+    t.integer  "photograph_primary",      :limit => 1
   end
 
   create_table "family_updates", :force => true do |t|

@@ -14991,3 +14991,2034 @@ Processing ChildUpdatesController#show_note (for 127.0.0.1 at 2010-06-23 22:28:5
 Rendering template within layouts/child_updates
 Rendering child_updates/show_note
 Completed in 14ms (View: 11, DB: 15) | 200 OK [http://localhost/child_updates/show_note/2?eid=f4156bae07dad9ab74468e3bd0915821]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (15.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateFamilies (1)
+Migrating to CreateFamilyImages (2)
+Migrating to CreateFamilyUpdates (3)
+Migrating to CreateChildren (4)
+Migrating to CreateChildImages (5)
+Migrating to CreateChildUpdates (6)
+Migrating to CreateFamilyChildren (7)
+Migrating to AddAttachmentsPhotographThumbPhotographMedAndPhotographLargeToChildImage (20100611194741)
+Migrating to AddAttachmentsPhotographToFamilyImage (20100612155714)
+Migrating to AlterChildImage (20100623023202)
+Migrating to AlterChildRenameSponsorBegin (20100629021518)
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW COLUMNS FROM `children` LIKE 'sponsor_being'[0m
+  [4;36;1mSQL (57.2ms)[0m   [0;1mALTER TABLE `children` CHANGE `sponsor_being` `sponsor_begin` date DEFAULT NULL[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100629021518')[0m
+Migrating to AlterFamilyRenameSponsorBeing (20100629021540)
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `families`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW COLUMNS FROM `families` LIKE 'sponsor_being'[0m
+  [4;36;1mSQL (14.9ms)[0m   [0;1mALTER TABLE `families` CHANGE `sponsor_being` `sponsor_begin` date DEFAULT NULL[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `child_images`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `child_images`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `child_images`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `child_updates`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `child_updates`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `child_updates`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW FIELDS FROM `children`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `children`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `children`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `families`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `families`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `families`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `family_children`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `family_children`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `family_children`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `family_images`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `family_images`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `family_images`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `family_updates`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `family_updates`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `family_updates`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateFamilies (1)
+Migrating to CreateFamilyImages (2)
+Migrating to CreateFamilyUpdates (3)
+Migrating to CreateChildren (4)
+Migrating to CreateChildImages (5)
+Migrating to CreateChildUpdates (6)
+Migrating to CreateFamilyChildren (7)
+Migrating to AddAttachmentsPhotographThumbPhotographMedAndPhotographLargeToChildImage (20100611194741)
+Migrating to AddAttachmentsPhotographToFamilyImage (20100612155714)
+Migrating to AlterChildImage (20100623023202)
+Migrating to AlterChildRenameSponsorBegin (20100629021518)
+Migrating to AlterFamilyRenameSponsorBeing (20100629021540)
+Migrating to AlterChildRenameClassRoom (20100629022519)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW COLUMNS FROM `children` LIKE 'class_room'[0m
+  [4;36;1mSQL (18.9ms)[0m   [0;1mALTER TABLE `children` CHANGE `class_room` `classroom` varchar(255) DEFAULT NULL[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (7.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `child_images`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `child_images`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `child_images`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `child_updates`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `child_updates`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `child_updates`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `children`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `children`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `children`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `families`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `families`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `families`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `family_children`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `family_children`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `family_children`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `family_images`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `family_images`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `family_images`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `family_updates`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `family_updates`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `family_updates`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (31.3ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.8ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.9ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.5ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.7ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (27.7ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (25.2ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.7ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.4ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.7ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.9ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (13.4ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (19.1ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.8ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.6ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.9ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (13.8ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (33.8ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.5ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.2ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.2ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (14.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.4ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (26.3ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.9ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.1ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.5ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.5ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (13.7ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.5ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (25.8ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.5ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (8.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (8.7ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (24.9ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (8.9ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.6ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (15.8ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (15.3ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.7ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (8.7ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (9.4ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (15.5ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.7ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.2ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.4ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.1ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (15.7ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.8ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.5ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.4ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (7.2ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (14.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.5ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.2ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.9ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.2ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (15.9ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.6ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.4ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.4ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.7ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (30.7ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.6ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.4ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.8ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.2ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.3ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (26.8ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.7ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.4ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.5ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.7ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.2ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (32.1ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.5ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.2ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (17.5ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.2ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (15.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (8.3ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.9ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.4ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.5ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.1ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.4ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (27.9ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.7ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime, `photograph_primary` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.9ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.3ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime, `photograph_file_name` varchar(255), `photograph_content_type` varchar(255), `photograph_file_size` int(11), `photograph_updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (15.5ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (9.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateFamilies (1)
+  [4;35;1mSQL (9.0ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_being` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('1')[0m
+Migrating to CreateFamilyImages (2)
+  [4;35;1mSQL (6.2ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (8.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('2')[0m
+Migrating to CreateFamilyUpdates (3)
+  [4;35;1mSQL (4.2ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('3')[0m
+Migrating to CreateChildren (4)
+  [4;35;1mSQL (5.1ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `class_room` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_being` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('4')[0m
+Migrating to CreateChildImages (5)
+  [4;35;1mSQL (6.4ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('5')[0m
+Migrating to CreateChildUpdates (6)
+  [4;35;1mSQL (5.1ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('6')[0m
+Migrating to CreateFamilyChildren (7)
+  [4;35;1mSQL (4.3ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('7')[0m
+Migrating to AddAttachmentsPhotographThumbPhotographMedAndPhotographLargeToChildImage (20100611194741)
+  [4;35;1mSQL (6.3ms)[0m   [0mALTER TABLE `child_images` ADD `photograph_file_name` varchar(255)[0m
+  [4;36;1mSQL (18.5ms)[0m   [0;1mALTER TABLE `child_images` ADD `photograph_content_type` varchar(255)[0m
+  [4;35;1mSQL (7.3ms)[0m   [0mALTER TABLE `child_images` ADD `photograph_file_size` int(11)[0m
+  [4;36;1mSQL (13.6ms)[0m   [0;1mALTER TABLE `child_images` ADD `photograph_updated_at` datetime[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100611194741')[0m
+Migrating to AddAttachmentsPhotographToFamilyImage (20100612155714)
+  [4;36;1mSQL (18.2ms)[0m   [0;1mALTER TABLE `family_images` ADD `photograph_file_name` varchar(255)[0m
+  [4;35;1mSQL (6.6ms)[0m   [0mALTER TABLE `family_images` ADD `photograph_content_type` varchar(255)[0m
+  [4;36;1mSQL (8.8ms)[0m   [0;1mALTER TABLE `family_images` ADD `photograph_file_size` int(11)[0m
+  [4;35;1mSQL (17.5ms)[0m   [0mALTER TABLE `family_images` ADD `photograph_updated_at` datetime[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100612155714')[0m
+Migrating to AlterChildImage (20100623023202)
+  [4;35;1mSQL (7.7ms)[0m   [0mALTER TABLE `child_images` ADD `photograph_primary` int[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100623023202')[0m
+Migrating to AlterChildRenameSponsorBegin (20100629021518)
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `children`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW COLUMNS FROM `children` LIKE 'sponsor_being'[0m
+  [4;35;1mSQL (9.0ms)[0m   [0mALTER TABLE `children` CHANGE `sponsor_being` `sponsor_begin` date DEFAULT NULL[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100629021518')[0m
+Migrating to AlterFamilyRenameSponsorBeing (20100629021540)
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `families`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW COLUMNS FROM `families` LIKE 'sponsor_being'[0m
+  [4;35;1mSQL (7.3ms)[0m   [0mALTER TABLE `families` CHANGE `sponsor_being` `sponsor_begin` date DEFAULT NULL[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100629021540')[0m
+Migrating to AlterChildRenameClassRoom (20100629022519)
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `children`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW COLUMNS FROM `children` LIKE 'class_room'[0m
+  [4;35;1mSQL (7.2ms)[0m   [0mALTER TABLE `children` CHANGE `class_room` `classroom` varchar(255) DEFAULT NULL[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100629022519')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `child_images`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `child_images`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `child_images`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `child_updates`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `child_updates`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `child_updates`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `children`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `children`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `families`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `families`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `families`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `family_children`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `family_children`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `family_children`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `family_images`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `family_images`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `family_images`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `family_updates`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `family_updates`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `family_updates`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateFamilies (1)
+Migrating to CreateFamilyImages (2)
+Migrating to CreateFamilyUpdates (3)
+Migrating to CreateChildren (4)
+Migrating to CreateChildImages (5)
+Migrating to CreateChildUpdates (6)
+Migrating to CreateFamilyChildren (7)
+Migrating to AddAttachmentsPhotographThumbPhotographMedAndPhotographLargeToChildImage (20100611194741)
+Migrating to AddAttachmentsPhotographToFamilyImage (20100612155714)
+Migrating to AlterChildImage (20100623023202)
+Migrating to AlterChildRenameSponsorBegin (20100629021518)
+Migrating to AlterFamilyRenameSponsorBeing (20100629021540)
+Migrating to AlterChildRenameClassRoom (20100629022519)
+Migrating to AlterChildImagesAddColumnPhotographPrimary (20100629024558)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Duplicate column name 'photograph_primary': ALTER TABLE `child_images` ADD `photograph_primary` bit[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (9.9ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.6ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateFamilies (1)
+  [4;35;1mSQL (3.4ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_being` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('1')[0m
+Migrating to CreateFamilyImages (2)
+  [4;35;1mSQL (3.4ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('2')[0m
+Migrating to CreateFamilyUpdates (3)
+  [4;35;1mSQL (4.0ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('3')[0m
+Migrating to CreateChildren (4)
+  [4;35;1mSQL (4.0ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `class_room` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_being` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('4')[0m
+Migrating to CreateChildImages (5)
+  [4;35;1mSQL (6.0ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('5')[0m
+Migrating to CreateChildUpdates (6)
+  [4;35;1mSQL (4.3ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('6')[0m
+Migrating to CreateFamilyChildren (7)
+  [4;35;1mSQL (3.8ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('7')[0m
+Migrating to AddAttachmentsPhotographThumbPhotographMedAndPhotographLargeToChildImage (20100611194741)
+  [4;35;1mSQL (5.4ms)[0m   [0mALTER TABLE `child_images` ADD `photograph_file_name` varchar(255)[0m
+  [4;36;1mSQL (9.3ms)[0m   [0;1mALTER TABLE `child_images` ADD `photograph_content_type` varchar(255)[0m
+  [4;35;1mSQL (6.4ms)[0m   [0mALTER TABLE `child_images` ADD `photograph_file_size` int(11)[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mALTER TABLE `child_images` ADD `photograph_updated_at` datetime[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100611194741')[0m
+Migrating to AddAttachmentsPhotographToFamilyImage (20100612155714)
+  [4;36;1mSQL (7.8ms)[0m   [0;1mALTER TABLE `family_images` ADD `photograph_file_name` varchar(255)[0m
+  [4;35;1mSQL (5.4ms)[0m   [0mALTER TABLE `family_images` ADD `photograph_content_type` varchar(255)[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mALTER TABLE `family_images` ADD `photograph_file_size` int(11)[0m
+  [4;35;1mSQL (7.6ms)[0m   [0mALTER TABLE `family_images` ADD `photograph_updated_at` datetime[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100612155714')[0m
+Migrating to AlterChildImage (20100623023202)
+  [4;35;1mSQL (6.1ms)[0m   [0mALTER TABLE `child_images` ADD `photograph_primary` bit[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100623023202')[0m
+Migrating to AlterChildRenameSponsorBegin (20100629021518)
+  [4;35;1mSQL (2.9ms)[0m   [0mSHOW FIELDS FROM `children`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW COLUMNS FROM `children` LIKE 'sponsor_being'[0m
+  [4;35;1mSQL (8.3ms)[0m   [0mALTER TABLE `children` CHANGE `sponsor_being` `sponsor_begin` date DEFAULT NULL[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100629021518')[0m
+Migrating to AlterFamilyRenameSponsorBeing (20100629021540)
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `families`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW COLUMNS FROM `families` LIKE 'sponsor_being'[0m
+  [4;35;1mSQL (6.7ms)[0m   [0mALTER TABLE `families` CHANGE `sponsor_being` `sponsor_begin` date DEFAULT NULL[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100629021540')[0m
+Migrating to AlterChildRenameClassRoom (20100629022519)
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `children`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW COLUMNS FROM `children` LIKE 'class_room'[0m
+  [4;35;1mSQL (10.1ms)[0m   [0mALTER TABLE `children` CHANGE `class_room` `classroom` varchar(255) DEFAULT NULL[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100629022519')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `child_images`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `child_images`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `child_updates`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `child_updates`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `child_updates`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `children`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `children`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `children`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `families`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `families`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW KEYS FROM `families`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `family_children`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `family_children`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `family_children`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `family_images`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `family_images`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `family_images`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `family_updates`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `family_updates`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `family_updates`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateFamilies (1)
+Migrating to CreateFamilyImages (2)
+Migrating to CreateFamilyUpdates (3)
+Migrating to CreateChildren (4)
+Migrating to CreateChildImages (5)
+Migrating to CreateChildUpdates (6)
+Migrating to CreateFamilyChildren (7)
+Migrating to AddAttachmentsPhotographThumbPhotographMedAndPhotographLargeToChildImage (20100611194741)
+Migrating to AddAttachmentsPhotographToFamilyImage (20100612155714)
+Migrating to AlterChildImage (20100623023202)
+Migrating to AlterChildRenameSponsorBegin (20100629021518)
+Migrating to AlterFamilyRenameSponsorBeing (20100629021540)
+Migrating to AlterChildRenameClassRoom (20100629022519)
+Migrating to AlterFamilyImage (20100629024852)
+  [4;36;1mSQL (42.0ms)[0m   [0;1mALTER TABLE `families` ADD `photograph_primary` bit[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100629024852')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mSHOW FIELDS FROM `child_images`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `child_images`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `child_updates`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `child_updates`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `child_updates`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `children`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `children`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `families`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `families`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `family_children`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `family_children`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `family_children`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `family_images`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `family_images`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `family_images`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `family_updates`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `family_updates`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `family_updates`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateFamilies (1)
+Migrating to CreateFamilyImages (2)
+Migrating to CreateFamilyUpdates (3)
+Migrating to CreateChildren (4)
+Migrating to CreateChildImages (5)
+Migrating to CreateChildUpdates (6)
+Migrating to CreateFamilyChildren (7)
+Migrating to AddAttachmentsPhotographThumbPhotographMedAndPhotographLargeToChildImage (20100611194741)
+Migrating to AddAttachmentsPhotographToFamilyImage (20100612155714)
+Migrating to AlterChildImage (20100623023202)
+Migrating to AlterChildRenameSponsorBegin (20100629021518)
+Migrating to AlterFamilyRenameSponsorBeing (20100629021540)
+Migrating to AlterChildRenameClassRoom (20100629022519)
+Migrating to AlterFamilyImage (20100629024852)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `child_images`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `child_images`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW FIELDS FROM `child_updates`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `child_updates`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `child_updates`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `children`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `children`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW FIELDS FROM `families`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `families`[0m
+  [4;35;1mSQL (9.5ms)[0m   [0mSHOW FIELDS FROM `family_children`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `family_children`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `family_children`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `family_images`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `family_images`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `family_images`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `family_updates`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `family_updates`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `family_updates`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW COLUMNS FROM `children` LIKE 'classroom'[0m
+  [4;36;1mSQL (30.0ms)[0m   [0;1mALTER TABLE `children` CHANGE `classroom` `class_room` varchar(255) DEFAULT NULL[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100629022519'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `child_images`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `child_images`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `child_updates`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `child_updates`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `child_updates`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `children`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `children`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `families`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mdescribe `families`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `family_children`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `family_children`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `family_children`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `family_images`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `family_images`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `family_images`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `family_updates`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `family_updates`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `family_updates`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateFamilies (1)
+Migrating to CreateFamilyImages (2)
+Migrating to CreateFamilyUpdates (3)
+Migrating to CreateChildren (4)
+Migrating to CreateChildImages (5)
+Migrating to CreateChildUpdates (6)
+Migrating to CreateFamilyChildren (7)
+Migrating to AddAttachmentsPhotographThumbPhotographMedAndPhotographLargeToChildImage (20100611194741)
+Migrating to AddAttachmentsPhotographToFamilyImage (20100612155714)
+Migrating to AlterChildImage (20100623023202)
+Migrating to AlterChildRenameSponsorBegin (20100629021518)
+Migrating to AlterFamilyRenameSponsorBeing (20100629021540)
+Migrating to AlterChildRenameClassRoom (20100629022519)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW COLUMNS FROM `children` LIKE 'class_room'[0m
+  [4;36;1mSQL (16.5ms)[0m   [0;1mALTER TABLE `children` CHANGE `class_room` `classroom` varchar(255) DEFAULT NULL[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100629022519')[0m
+Migrating to AlterFamilyImage (20100629024852)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `child_images`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `child_images`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `child_updates`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `child_updates`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `child_updates`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `children`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `children`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `families`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `families`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `family_children`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `family_children`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `family_children`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `family_images`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `family_images`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `family_images`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `family_updates`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `family_updates`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `family_updates`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (15.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateFamilies (1)
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_being` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('1')[0m
+Migrating to CreateFamilyImages (2)
+  [4;35;1mSQL (3.9ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('2')[0m
+Migrating to CreateFamilyUpdates (3)
+  [4;35;1mSQL (4.0ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('3')[0m
+Migrating to CreateChildren (4)
+  [4;35;1mSQL (4.6ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `class_room` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_being` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('4')[0m
+Migrating to CreateChildImages (5)
+  [4;35;1mSQL (6.0ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('5')[0m
+Migrating to CreateChildUpdates (6)
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('6')[0m
+Migrating to CreateFamilyChildren (7)
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('7')[0m
+Migrating to AddAttachmentsPhotographThumbPhotographMedAndPhotographLargeToChildImage (20100611194741)
+  [4;35;1mSQL (5.4ms)[0m   [0mALTER TABLE `child_images` ADD `photograph_file_name` varchar(255)[0m
+  [4;36;1mSQL (6.9ms)[0m   [0;1mALTER TABLE `child_images` ADD `photograph_content_type` varchar(255)[0m
+  [4;35;1mSQL (6.5ms)[0m   [0mALTER TABLE `child_images` ADD `photograph_file_size` int(11)[0m
+  [4;36;1mSQL (5.6ms)[0m   [0;1mALTER TABLE `child_images` ADD `photograph_updated_at` datetime[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100611194741')[0m
+Migrating to AddAttachmentsPhotographToFamilyImage (20100612155714)
+  [4;36;1mSQL (5.6ms)[0m   [0;1mALTER TABLE `family_images` ADD `photograph_file_name` varchar(255)[0m
+  [4;35;1mSQL (6.8ms)[0m   [0mALTER TABLE `family_images` ADD `photograph_content_type` varchar(255)[0m
+  [4;36;1mSQL (5.7ms)[0m   [0;1mALTER TABLE `family_images` ADD `photograph_file_size` int(11)[0m
+  [4;35;1mSQL (6.5ms)[0m   [0mALTER TABLE `family_images` ADD `photograph_updated_at` datetime[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100612155714')[0m
+Migrating to AlterChildImage (20100623023202)
+  [4;35;1mSQL (5.6ms)[0m   [0mALTER TABLE `child_images` ADD `photograph_primary` bit[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100623023202')[0m
+Migrating to AlterChildRenameSponsorBegin (20100629021518)
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `children`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW COLUMNS FROM `children` LIKE 'sponsor_being'[0m
+  [4;35;1mSQL (79.3ms)[0m   [0mALTER TABLE `children` CHANGE `sponsor_being` `sponsor_begin` date DEFAULT NULL[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100629021518')[0m
+Migrating to AlterFamilyRenameSponsorBeing (20100629021540)
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `families`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW COLUMNS FROM `families` LIKE 'sponsor_being'[0m
+  [4;35;1mSQL (6.9ms)[0m   [0mALTER TABLE `families` CHANGE `sponsor_being` `sponsor_begin` date DEFAULT NULL[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100629021540')[0m
+Migrating to AlterChildRenameClassRoom (20100629022519)
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `children`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW COLUMNS FROM `children` LIKE 'class_room'[0m
+  [4;35;1mSQL (8.4ms)[0m   [0mALTER TABLE `children` CHANGE `class_room` `classroom` varchar(255) DEFAULT NULL[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100629022519')[0m
+Migrating to AlterFamilyImage (20100629024852)
+  [4;35;1mSQL (7.7ms)[0m   [0mALTER TABLE `family_images` ADD `photograph_primary` bit[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100629024852')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `child_images`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `child_images`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `child_updates`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `child_updates`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `child_updates`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `children`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `children`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `children`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `families`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `families`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `families`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `family_children`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `family_children`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `family_children`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `family_images`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `family_images`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `family_updates`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `family_updates`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `family_updates`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.2ms)[0m   [0mDROP TABLE `child_updates`[0m
+  [4;36;1mSQL (4.2ms)[0m   [0;1mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mDROP TABLE `children`[0m
+  [4;35;1mSQL (16.8ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mDROP TABLE `families`[0m
+  [4;36;1mSQL (8.7ms)[0m   [0;1mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mDROP TABLE `family_children`[0m
+  [4;35;1mSQL (4.9ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (7.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mDROP TABLE `family_updates`[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateFamilies (1)
+Migrating to CreateFamilyImages (2)
+Migrating to CreateFamilyUpdates (3)
+Migrating to CreateChildren (4)
+Migrating to CreateChildImages (5)
+Migrating to CreateChildUpdates (6)
+Migrating to CreateFamilyChildren (7)
+Migrating to AddAttachmentsPhotographThumbPhotographMedAndPhotographLargeToChildImage (20100611194741)
+Migrating to AddAttachmentsPhotographToFamilyImage (20100612155714)
+Migrating to AlterChildImage (20100623023202)
+Migrating to AlterChildRenameSponsorBegin (20100629021518)
+Migrating to AlterFamilyRenameSponsorBeing (20100629021540)
+Migrating to AlterChildRenameClassRoom (20100629022519)
+Migrating to AlterFamilyImage (20100629024852)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `child_images`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `child_images`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `child_updates`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `child_updates`[0m
+  [4;35;1mSQL (11.8ms)[0m   [0mSHOW KEYS FROM `child_updates`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `children`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `children`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `families`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `families`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW KEYS FROM `families`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `family_children`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `family_children`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `family_children`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `family_images`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `family_images`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `family_updates`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `family_updates`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `family_updates`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (5.6ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#index (for 127.0.0.1 at 2010-06-28 22:53:37) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `children` [0m
+  [4;36;1mChild Load (0.3ms)[0m   [0;1mSELECT `children`.* FROM `children` ORDER BY `children`.`id` ASC LIMIT 0, 15[0m
+Rendering template within layouts/children
+Rendering list
+Rendered _list_header (31.8ms)
+Rendered _list_column_headings (53.1ms)
+Rendered _messages (2.2ms)
+Rendered _list_messages (16.2ms)
+  [4;35;1mChildImage Load (0.6ms)[0m   [0mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 1 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (12.1ms)
+Rendered _list_actions (22.0ms)
+Rendered _list_record (49.3ms)
+  [4;36;1mChildImage Load (0.4ms)[0m   [0;1mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 2 AND (photograph_primary=1)) [0m
+  [4;35;1mChildImage Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `child_images`[0m
+Rendered _list_record_columns (27.6ms)
+Rendered _list_actions (9.0ms)
+Rendered _list_record (37.7ms)
+  [4;36;1mChildImage Load (0.5ms)[0m   [0;1mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 3 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (10.5ms)
+Rendered _list_actions (9.1ms)
+Rendered _list_record (20.6ms)
+  [4;35;1mChildImage Load (0.9ms)[0m   [0mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 4 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (10.4ms)
+Rendered _list_actions (8.9ms)
+Rendered _list_record (20.4ms)
+  [4;36;1mChildImage Load (0.3ms)[0m   [0;1mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 5 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (101.1ms)
+Rendered _list_actions (6.8ms)
+Rendered _list_record (108.9ms)
+  [4;35;1mChildImage Load (0.4ms)[0m   [0mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 6 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (7.5ms)
+Rendered _list_actions (6.6ms)
+Rendered _list_record (15.2ms)
+  [4;36;1mChildImage Load (0.4ms)[0m   [0;1mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 7 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (7.5ms)
+Rendered _list_actions (7.7ms)
+Rendered _list_record (16.1ms)
+  [4;35;1mChildImage Load (0.4ms)[0m   [0mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 8 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (7.1ms)
+Rendered _list_actions (6.6ms)
+Rendered _list_record (14.6ms)
+  [4;36;1mChildImage Load (0.4ms)[0m   [0;1mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 9 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (7.1ms)
+Rendered _list_actions (7.6ms)
+Rendered _list_record (15.5ms)
+  [4;35;1mChildImage Load (0.4ms)[0m   [0mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 10 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (6.8ms)
+Rendered _list_actions (6.6ms)
+Rendered _list_record (14.2ms)
+Rendered _list_pagination (1.7ms)
+Rendered _list (413.5ms)
+Completed in 534ms (View: 493, DB: 12) | 200 OK [http://localhost/children]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-28 22:53:38) [GET]
+
+ActionController::RoutingError (No route matches "/system/photographs/2/thumbnail/Sarsaparilla.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-28 22:53:39) [GET]
+
+ActionController::RoutingError (No route matches "/system/photographs/3/thumbnail/Bok.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-28 22:53:39) [GET]
+
+ActionController::RoutingError (No route matches "/system/photographs/4/thumbnail/Cilantro.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-28 22:53:39) [GET]
+
+ActionController::RoutingError (No route matches "/system/photographs/5/thumbnail/cress.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-28 22:53:39) [GET]
+
+ActionController::RoutingError (No route matches "/system/photographs/6/thumbnail/Sea.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-28 22:53:39) [GET]
+
+ActionController::RoutingError (No route matches "/system/photographs/7/thumbnail/Sassafrass.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-28 22:53:39) [GET]
+
+ActionController::RoutingError (No route matches "/system/photographs/8/thumbnail/Chives.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-28 22:53:39) [GET]
+
+ActionController::RoutingError (No route matches "/system/photographs/9/thumbnail/Chaya.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mFamilyImage Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `family_images`[0m
+  [4;35;1mFamily Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `families`[0m
+
+
+Processing FamilyImagesController#index (for 127.0.0.1 at 2010-06-28 22:53:44) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `family_images` [0m
+  [4;35;1mFamilyImage Load (0.2ms)[0m   [0mSELECT `family_images`.* FROM `family_images` ORDER BY `family_images`.`id` ASC LIMIT 0, 15[0m
+  [4;36;1mFamily Load (0.6ms)[0m   [0;1mSELECT * FROM `families` WHERE (`families`.`id` IN (6,7,8,1,3,4,5)) [0m
+Rendering template within layouts/family_images
+Rendering list
+Rendered _list_header (5.1ms)
+Rendered _list_column_headings (38.4ms)
+Rendered _messages (1.0ms)
+Rendered _list_messages (10.4ms)
+Mon Jun 28 22:53:44 -0400 2010#<NoMethodError: undefined method `img_file_name' for #<FamilyImage:0xb6f1997c>> -- on the ActiveScaffold column = :img in FamilyImagesController
+
+ActionView::TemplateError (undefined method `img_file_name' for #<FamilyImage:0xb6f1997c>) on line #4 of vendor/plugins/activescaffold/frontends/default/views/_list_record_columns.html.erb:
+1:   <%= content_tag :td, mark_record(marked_records.include?(record.id.to_s), :id => record.id), :class => 'mark_record_column' if active_scaffold_config.list.mark_records %>
+2: <% active_scaffold_config.list.columns.each do |column| %>
+3:   <% authorized = record.authorized_for?(:crud_type => :read, :column => column.name) -%>
+4:   <% column_value = authorized ? get_column_value(record, column) : active_scaffold_config.list.empty_field_text -%>
+5: 
+6:   <td class="<%= column_class(column, column_value) %>" >
+7:     <%= authorized ? render_list_column(column_value, column, record) : column_value %>
+
+    /usr/lib/ruby/gems/1.8/gems/thoughtbot-paperclip-2.3.1/lib/paperclip/attachment.rb:249:in `send'
+    /usr/lib/ruby/gems/1.8/gems/thoughtbot-paperclip-2.3.1/lib/paperclip/attachment.rb:249:in `instance_read'
+    /usr/lib/ruby/gems/1.8/gems/thoughtbot-paperclip-2.3.1/lib/paperclip/attachment.rb:171:in `original_filename'
+    /usr/lib/ruby/gems/1.8/gems/thoughtbot-paperclip-2.3.1/lib/paperclip/attachment.rb:229:in `file?'
+    vendor/plugins/activescaffold/frontends/default/views/_list_record_columns.html.erb:4
+    vendor/plugins/activescaffold/frontends/default/views/_list_record_columns.html.erb:2
+    vendor/plugins/activescaffold/frontends/default/views/_list_record.html.erb:10
+    vendor/plugins/activescaffold/frontends/default/views/_list.html.erb:16
+    vendor/plugins/activescaffold/frontends/default/views/list.html.erb:30
+
+Rendered rescues/_trace (83.6ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (22.6ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.8ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.8ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629024852')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (580.6ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1834.6ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1309.6ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (791.7ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (863.2ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1504.0ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (8.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (23.7ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629024852')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (10.9ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (27.8ms)[0m   [0;1mDROP DATABASE IF EXISTS `riochild_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `riochild_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.4ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `classroom` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_begin` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_begin` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629024852')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('5')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('6')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100611194741')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100612155714')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021540')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629022519')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('3')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20100629021518')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20100623023202')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'riochild_dev.children' doesn't exist: SHOW FIELDS FROM `children`[0m
+
+
+Processing ApplicationController#sponsored (for 127.0.0.1 at 2010-06-30 23:56:18) [GET]
+  Parameters: {"id"=>"1"}
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'riochild_dev.children' doesn't exist: SHOW FIELDS FROM `children`):
+  app/controllers/children_controller.rb:4
+
+Rendered rescues/_trace (35.8ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (16.2ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateFamilies (1)
+  [4;35;1mSQL (5.9ms)[0m   [0mCREATE TABLE `families` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `sponsor_being` date, `sponsor_expire` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('1')[0m
+Migrating to CreateFamilyImages (2)
+  [4;35;1mSQL (4.3ms)[0m   [0mCREATE TABLE `family_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('2')[0m
+Migrating to CreateFamilyUpdates (3)
+  [4;35;1mSQL (4.2ms)[0m   [0mCREATE TABLE `family_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('3')[0m
+Migrating to CreateChildren (4)
+  [4;35;1mSQL (4.8ms)[0m   [0mCREATE TABLE `children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first` varchar(255), `last` varchar(255), `gender` varchar(255), `class_room` varchar(255), `village` varchar(255), `teacher` varchar(255), `sponsor_code` varchar(255), `age` int(11), `grade` int(11), `sponsor_being` date, `sponsor_expire` date, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('4')[0m
+Migrating to CreateChildImages (5)
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE TABLE `child_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('5')[0m
+Migrating to CreateChildUpdates (6)
+  [4;35;1mSQL (3.8ms)[0m   [0mCREATE TABLE `child_updates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `child_id` int(11), `notes` text, `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('6')[0m
+Migrating to CreateFamilyChildren (7)
+  [4;35;1mSQL (3.4ms)[0m   [0mCREATE TABLE `family_children` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `family_id` int(11), `child_id` int(11), `update_dt` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('7')[0m
+Migrating to AddAttachmentsPhotographThumbPhotographMedAndPhotographLargeToChildImage (20100611194741)
+  [4;35;1mSQL (6.6ms)[0m   [0mALTER TABLE `child_images` ADD `photograph_file_name` varchar(255)[0m
+  [4;36;1mSQL (5.7ms)[0m   [0;1mALTER TABLE `child_images` ADD `photograph_content_type` varchar(255)[0m
+  [4;35;1mSQL (15.2ms)[0m   [0mALTER TABLE `child_images` ADD `photograph_file_size` int(11)[0m
+  [4;36;1mSQL (6.1ms)[0m   [0;1mALTER TABLE `child_images` ADD `photograph_updated_at` datetime[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100611194741')[0m
+Migrating to AddAttachmentsPhotographToFamilyImage (20100612155714)
+  [4;36;1mSQL (6.4ms)[0m   [0;1mALTER TABLE `family_images` ADD `photograph_file_name` varchar(255)[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mALTER TABLE `family_images` ADD `photograph_content_type` varchar(255)[0m
+  [4;36;1mSQL (6.3ms)[0m   [0;1mALTER TABLE `family_images` ADD `photograph_file_size` int(11)[0m
+  [4;35;1mSQL (9.4ms)[0m   [0mALTER TABLE `family_images` ADD `photograph_updated_at` datetime[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100612155714')[0m
+Migrating to AlterChildImage (20100623023202)
+  [4;35;1mSQL (6.8ms)[0m   [0mALTER TABLE `child_images` ADD `photograph_primary` tinyint[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100623023202')[0m
+Migrating to AlterChildRenameSponsorBegin (20100629021518)
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `children`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW COLUMNS FROM `children` LIKE 'sponsor_being'[0m
+  [4;35;1mSQL (8.9ms)[0m   [0mALTER TABLE `children` CHANGE `sponsor_being` `sponsor_begin` date DEFAULT NULL[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100629021518')[0m
+Migrating to AlterFamilyRenameSponsorBeing (20100629021540)
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `families`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW COLUMNS FROM `families` LIKE 'sponsor_being'[0m
+  [4;35;1mSQL (7.6ms)[0m   [0mALTER TABLE `families` CHANGE `sponsor_being` `sponsor_begin` date DEFAULT NULL[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100629021540')[0m
+Migrating to AlterChildRenameClassRoom (20100629022519)
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `children`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW COLUMNS FROM `children` LIKE 'class_room'[0m
+  [4;35;1mSQL (7.7ms)[0m   [0mALTER TABLE `children` CHANGE `class_room` `classroom` varchar(255) DEFAULT NULL[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100629022519')[0m
+Migrating to AlterFamilyImage (20100629024852)
+  [4;35;1mSQL (25.4ms)[0m   [0mALTER TABLE `family_images` ADD `photograph_primary` tinyint[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100629024852')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `child_images`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `child_images`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `child_images`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `child_updates`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `child_updates`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `child_updates`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `children`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `children`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `families`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `families`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `families`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `family_children`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `family_children`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `family_children`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `family_images`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `family_images`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `family_images`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `family_updates`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `family_updates`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `family_updates`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#sponsored (for 127.0.0.1 at 2010-07-01 00:00:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChild Load (0.4ms)[0m   [0mSELECT * FROM `children` WHERE (sponsor_begin >= '2010-06-01') [0m
+Sending data Sponsored.pdf
+Completed in 419ms (View: 7, DB: 2) | 200 OK [http://localhost/children/sponsored/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#sponsored (for 127.0.0.1 at 2010-07-01 00:01:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChild Load (0.1ms)[0m   [0mSELECT * FROM `children` WHERE (sponsor_begin >= '2010-06-01') [0m
+Sending data 
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://localhost/children/sponsored/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#sponsored (for 127.0.0.1 at 2010-07-01 00:02:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChild Load (0.5ms)[0m   [0mSELECT * FROM `children` WHERE (sponsor_begin >= '2010-06-01') [0m
+Sending data 
+Completed in 35ms (View: 10, DB: 3) | 200 OK [http://localhost/children/sponsored/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#show (for 127.0.0.1 at 2010-07-01 00:02:17) [GET]
+  Parameters: {"id"=>"sponsored"}
+  [4;35;1mChild Load (0.4ms)[0m   [0mSELECT * FROM `children` WHERE (`children`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Child with ID=sponsored):
+  
+
+Rendered rescues/_trace (36.1ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#sponsored (for 127.0.0.1 at 2010-07-01 00:02:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChild Load (0.1ms)[0m   [0mSELECT * FROM `children` WHERE (sponsor_begin >= '2010-06-01') [0m
+Sending data 
+Completed in 93ms (View: 6, DB: 3) | 200 OK [http://localhost/children/sponsored/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#show (for 127.0.0.1 at 2010-07-01 00:02:48) [GET]
+  Parameters: {"id"=>"sponsored"}
+  [4;35;1mChild Load (0.8ms)[0m   [0mSELECT * FROM `children` WHERE (`children`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Child with ID=sponsored):
+  
+
+Rendered rescues/_trace (34.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (13.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (6.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#sponsored (for 127.0.0.1 at 2010-07-01 00:02:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChild Load (0.6ms)[0m   [0mSELECT * FROM `children` WHERE (sponsor_begin >= '2010-06-01') [0m
+Sending data 
+Completed in 21ms (View: 8, DB: 22) | 200 OK [http://localhost/children/sponsored/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#show (for 127.0.0.1 at 2010-07-01 00:03:11) [GET]
+  Parameters: {"id"=>"sponsored"}
+  [4;35;1mChild Load (0.1ms)[0m   [0mSELECT * FROM `children` WHERE (`children`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Child with ID=sponsored):
+  
+
+Rendered rescues/_trace (33.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#sponsored (for 127.0.0.1 at 2010-07-01 00:03:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChild Load (0.1ms)[0m   [0mSELECT * FROM `children` WHERE (sponsor_begin >= '2010-06-01') [0m
+
+ActionView::MissingTemplate (Missing template sponsored.erb in view path vendor/plugins/activescaffold/frontends/default/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#sponsored (for 127.0.0.1 at 2010-07-01 00:03:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChild Load (0.1ms)[0m   [0mSELECT * FROM `children` WHERE (sponsor_begin >= '2010-06-01') [0m
+Sending data 
+Completed in 16ms (View: 7, DB: 3) | 200 OK [http://localhost/children/sponsored/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#sponsored (for 127.0.0.1 at 2010-07-01 21:38:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChild Load (0.2ms)[0m   [0mSELECT * FROM `children` WHERE (sponsor_begin >= '2010-06-01') [0m
+Sending data 
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://localhost/children/sponsored/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#sponsored (for 127.0.0.1 at 2010-07-01 21:38:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChild Load (0.1ms)[0m   [0mSELECT * FROM `children` WHERE (sponsor_begin >= '2010-06-01') [0m
+Sending data 
+Completed in 15ms (View: 6, DB: 2) | 200 OK [http://localhost/children/sponsored/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#sponsored (for 127.0.0.1 at 2010-07-01 21:39:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChild Load (0.1ms)[0m   [0mSELECT * FROM `children` WHERE (sponsor_begin >= '2010-06-01') [0m
+Sending data 
+Completed in 16ms (View: 7, DB: 2) | 200 OK [http://localhost/children/sponsored/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#sponsored (for 127.0.0.1 at 2010-07-01 21:40:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChild Load (0.1ms)[0m   [0mSELECT * FROM `children` WHERE (sponsor_begin >= '2010-06-01') [0m
+Rendering template within layouts/children
+Rendering children/sponsored
+Completed in 39ms (View: 29, DB: 1) | 200 OK [http://localhost/children/sponsored/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#sponsored (for 127.0.0.1 at 2010-07-01 21:40:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChild Load (0.2ms)[0m   [0mSELECT * FROM `children` WHERE (sponsor_begin >= '2010-06-01') [0m
+Rendering template within layouts/children
+Rendering children/sponsored
+Completed in 32ms (View: 23, DB: 2) | 200 OK [http://localhost/children/sponsored/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#sponsored (for 127.0.0.1 at 2010-07-01 21:41:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChild Load (11.7ms)[0m   [0mSELECT * FROM `children` WHERE (sponsor_begin >= '2010-06-01') [0m
+  [4;36;1mSQL (4.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `children` [0m
+  [4;35;1mChild Load (0.4ms)[0m   [0mSELECT `children`.* FROM `children` ORDER BY `children`.`id` ASC LIMIT 0, 15[0m
+Rendering list
+Rendered _list_header (5.1ms)
+Rendered _list_column_headings (39.0ms)
+Rendered _messages (1.1ms)
+Rendered _list_messages (12.7ms)
+  [4;36;1mChildImage Load (0.4ms)[0m   [0;1mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 1 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (8.8ms)
+Rendered _list_actions (9.9ms)
+Rendered _list_record (31.7ms)
+  [4;35;1mChildImage Load (0.4ms)[0m   [0mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 2 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (7.0ms)
+Rendered _list_actions (6.4ms)
+Rendered _list_record (16.2ms)
+  [4;36;1mChildImage Load (0.4ms)[0m   [0;1mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 3 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (6.8ms)
+Rendered _list_actions (6.9ms)
+Rendered _list_record (14.5ms)
+  [4;35;1mChildImage Load (0.4ms)[0m   [0mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 4 AND (photograph_primary=1)) [0m
+  [4;36;1mChildImage Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `child_images`[0m
+Rendered _list_record_columns (20.3ms)
+Rendered _list_actions (7.9ms)
+Rendered _list_record (29.1ms)
+  [4;35;1mChildImage Load (0.4ms)[0m   [0mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 5 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (7.0ms)
+Rendered _list_actions (6.6ms)
+Rendered _list_record (14.5ms)
+  [4;36;1mChildImage Load (0.8ms)[0m   [0;1mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 6 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (7.5ms)
+Rendered _list_actions (6.9ms)
+Rendered _list_record (15.2ms)
+  [4;35;1mChildImage Load (0.4ms)[0m   [0mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 7 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (7.9ms)
+Rendered _list_actions (6.6ms)
+Rendered _list_record (15.4ms)
+  [4;36;1mChildImage Load (0.7ms)[0m   [0;1mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 8 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (7.4ms)
+Rendered _list_actions (6.1ms)
+Rendered _list_record (14.4ms)
+  [4;35;1mChildImage Load (0.4ms)[0m   [0mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 9 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (7.7ms)
+Rendered _list_actions (6.5ms)
+Rendered _list_record (15.1ms)
+  [4;36;1mChildImage Load (0.4ms)[0m   [0;1mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 10 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (7.1ms)
+Rendered _list_actions (6.5ms)
+Rendered _list_record (14.4ms)
+Rendered _list_pagination (2.1ms)
+Rendered _list (353.7ms)
+
+NoMethodError (undefined method `rename_columns' for #<String:0xb6b86d50>):
+  app/controllers/children_controller.rb:29:in `sponsored'
+
+Rendered rescues/_trace (33.2ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mChild Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#sponsored (for 127.0.0.1 at 2010-07-01 21:43:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mChild Load (0.2ms)[0m   [0;1mSELECT * FROM `children` WHERE (sponsor_begin >= '2010-06-01') [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM `children` [0m
+  [4;36;1mChild Load (0.1ms)[0m   [0;1mSELECT `children`.* FROM `children` ORDER BY `children`.`id` ASC LIMIT 0, 15[0m
+Rendering list
+Rendered _list_header (4.3ms)
+Rendered _list_column_headings (36.7ms)
+Rendered _messages (1.0ms)
+Rendered _list_messages (10.1ms)
+  [4;35;1mChildImage Load (0.3ms)[0m   [0mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 1 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (7.7ms)
+Rendered _list_actions (8.0ms)
+Rendered _list_record (25.3ms)
+  [4;36;1mChildImage Load (0.1ms)[0m   [0;1mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 2 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (6.3ms)
+Rendered _list_actions (6.7ms)
+Rendered _list_record (13.8ms)
+  [4;35;1mChildImage Load (0.1ms)[0m   [0mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 3 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (6.3ms)
+Rendered _list_actions (25.4ms)
+Rendered _list_record (99.5ms)
+  [4;36;1mChildImage Load (0.2ms)[0m   [0;1mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 4 AND (photograph_primary=1)) [0m
+  [4;35;1mChildImage Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `child_images`[0m
+Rendered _list_record_columns (8.8ms)
+Rendered _list_actions (6.7ms)
+Rendered _list_record (16.4ms)
+  [4;36;1mChildImage Load (0.1ms)[0m   [0;1mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 5 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (6.7ms)
+Rendered _list_actions (6.6ms)
+Rendered _list_record (14.1ms)
+  [4;35;1mChildImage Load (0.9ms)[0m   [0mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 6 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (7.7ms)
+Rendered _list_actions (6.3ms)
+Rendered _list_record (14.9ms)
+  [4;36;1mChildImage Load (0.1ms)[0m   [0;1mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 7 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (6.7ms)
+Rendered _list_actions (6.6ms)
+Rendered _list_record (14.1ms)
+  [4;35;1mChildImage Load (0.1ms)[0m   [0mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 8 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (6.6ms)
+Rendered _list_actions (6.4ms)
+Rendered _list_record (13.8ms)
+  [4;36;1mChildImage Load (0.1ms)[0m   [0;1mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 9 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (6.7ms)
+Rendered _list_actions (6.4ms)
+Rendered _list_record (14.1ms)
+  [4;35;1mChildImage Load (0.1ms)[0m   [0mSELECT * FROM `child_images` WHERE (`child_images`.child_id = 10 AND (photograph_primary=1)) [0m
+Rendered _list_record_columns (6.5ms)
+Rendered _list_actions (6.3ms)
+Rendered _list_record (13.5ms)
+Rendered _list_pagination (1.3ms)
+Rendered _list (309.0ms)
+
+NoMethodError (undefined method `rename_columns' for #<String:0xb6cb53ac>):
+  app/controllers/children_controller.rb:29:in `sponsored'
+
+Rendered rescues/_trace (31.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#sponsored (for 127.0.0.1 at 2010-07-01 21:43:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChild Load (0.1ms)[0m   [0mSELECT * FROM `children` WHERE (sponsor_begin >= '2010-06-01') [0m
+
+NoMethodError (undefined method `titelize' for "first":String):
+  app/controllers/children_controller.rb:29:in `sponsored'
+  ruport (1.6.3) lib/ruport/data/table.rb:552:in `rename_columns'
+  ruport (1.6.3) lib/ruport/data/table.rb:552:in `each'
+  ruport (1.6.3) lib/ruport/data/table.rb:552:in `rename_columns'
+  app/controllers/children_controller.rb:29:in `sponsored'
+
+Rendered rescues/_trace (38.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (11.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (14.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mChild Columns (7.8ms)[0m   [0;1mSHOW FIELDS FROM `children`[0m
+
+
+Processing ChildrenController#sponsored (for 127.0.0.1 at 2010-07-01 21:44:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChild Load (2.4ms)[0m   [0mSELECT * FROM `children` WHERE (sponsor_begin >= '2010-06-01') [0m
+Rendering template within layouts/children
+Rendering children/sponsored
+Completed in 18ms (View: 7, DB: 36) | 200 OK [http://localhost/children/sponsored/1]

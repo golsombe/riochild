@@ -1,9 +1,9 @@
 class AlterChildImage < ActiveRecord::Migration
   def self.up
-	add_column :child_images,  :photograph_primary,  :int 
+	add_column :child_images,  :photograph_primary,  :bit 
   end
 
   def self.down
-	remove_column :child_images, :primary_photograph
+	remove_column :child_images, :photograph_primary
   end
 end

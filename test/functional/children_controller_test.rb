@@ -1,45 +1,36 @@
+require 'rubygems'
+require 'shoulda'
 require 'test_helper'
-
 class ChildrenControllerTest < ActionController::TestCase
-  test "should get index" do
-    get :index
-    assert_response :success
-    assert_not_nil assigns(:children)
-  end
+    context "on GET to :show for first record" do
+      setup do
+        get :show, :id => 1
+      end
 
-  test "should get new" do
-    get :new
-    assert_response :success
-  end
+      should_respond_with(:success)
+      should_render_template('show')
+      should_not_set_the_flash
 
-  test "should create child" do
-    assert_difference('Child.count') do
-      post :create, :child => { }
     end
+    context "on Get to :list records" do
+	setup do
+		get :list
+	end
+	
+	should_respond_with(:success)
+	should_render_template('list')
+	should_not_set_the_flash
 
-    assert_redirected_to child_path(assigns(:child))
+	#should_have_columns_in(:list,:child_primary_photo, :child_name, :age, :gender,:village, :teacher, :grade, :classroom, :sponsor_code,  :sponsor_begin, :sponsor_expire)
+	#should_render_as_form_ui(:sponsor_begin, :calendar_date_select)
+     end
+     context "on Post to :create should create record" do
+	setup do 
+		Child.create(:first=> "one", :last=>"two")
+	end
+	
+	should_change "Child.count", :by=> 1
+	
+     end
+
   end
-
-  test "should show child" do
-    get :show, :id => children(:one).to_param
-    assert_response :success
-  end
-
-  test "should get edit" do
-    get :edit, :id => children(:one).to_param
-    assert_response :success
-  end
-
-  test "should update child" do
-    put :update, :id => children(:one).to_param, :child => { }
-    assert_redirected_to child_path(assigns(:child))
-  end
-
-  test "should destroy child" do
-    assert_difference('Child.count', -1) do
-      delete :destroy, :id => children(:one).to_param
-    end
-
-    assert_redirected_to children_path
-  end
-end
