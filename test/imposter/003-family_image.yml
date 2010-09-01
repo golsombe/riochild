@@ -1,0 +1,11 @@
+--- 
+family_image: 
+  fields: 
+    id: i.to_s
+    family_id: (1+rand(9)).to_s
+    notes: Faker::Lorem.sentence(3)
+    photograph_content_type: ("image/jpg")
+    photograph_file_name: ([Imposter::Vegtable.one, "jpg"]).join(".")
+    photograph_file_size: (1024 + rand(14000)).to_s
+    photograph_primary: (["0","1"].shuffle[0,1]).to_s
+  quantity: 10

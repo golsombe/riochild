@@ -1,0 +1,8 @@
+--- 
+child_update: 
+  fields: 
+    id: i.to_s
+    child_id: (1+rand(9)).to_s
+    notes: Faker::Lorem.sentence(3)
+    update_dt: Date.today.to_s
+  quantity: 10

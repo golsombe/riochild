@@ -1,0 +1,8 @@
+--- 
+family_child: 
+  fields: 
+    id: i.to_s
+    family_id: (1+rand(9)).to_s
+    child_id: (1+rand(9)).to_s
+    update_dt: Date.today.to_s
+  quantity: 10
