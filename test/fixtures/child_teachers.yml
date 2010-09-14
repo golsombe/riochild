@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  child_id: 1
+  teacher_id: 1
+  valid_from: 2010-09-13
+  valid_until: 2010-09-13
+  notes: MyText
+
+two:
+  child_id: 1
+  teacher_id: 1
+  valid_from: 2010-09-13
+  valid_until: 2010-09-13
+  notes: MyText

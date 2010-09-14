@@ -1,9 +1,9 @@
-set :user, 'carefort'
-set :password, 'sd7656dsq'
+set :user, 'riococok'
+set :password, 'STLrck10'
 set :server, 'riochilddev'
-set :application, 'carefortheearth.com'
+set :application, 'riococokids.com'
 set :repository, 'git://github.com/golsombe/riochild.git'
-set :keep_releases, 5
+set :keep_releases, 2
 set :use_sudo, false
 set :branch, "master"
 
@@ -14,7 +14,7 @@ role :web, application                          # Your HTTP server, Apache/etc
 role :app, application                          # This may be the same as your `Web` server
 role :db,  application, :primary => true # This is where Rails migrations will run
 
-set :deploy_to, '/home/carefort/railsapps/riochilddev'
+set :deploy_to, '/home/riococok/railsapps/riochilddev'
 
 task :restart, :roles => :app do
 end

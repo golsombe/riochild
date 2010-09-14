@@ -23,6 +23,16 @@ ActiveRecord::Schema.define(:version => 20100629024852) do
     t.integer  "photograph_primary",      :limit => 1
   end
 
+  create_table "child_teachers", :force => true do |t|
+    t.integer  "child_id"
+    t.integer  "teacher_id"
+    t.date     "valid_from"
+    t.date     "valid_until"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "child_updates", :force => true do |t|
     t.integer  "child_id"
     t.text     "notes"

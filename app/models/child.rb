@@ -2,6 +2,8 @@ class Child < ActiveRecord::Base
 	acts_as_reportable
 
 	has_many :family_children
+	has_many :child_teachers
+	has_many :teachers, :through=> :child_teachers
 	has_many :families, :through=> :family_children
 	has_many :child_images
 	has_many :child_updates
