@@ -1,2 +1,0 @@
-<%=@record.notes%>
-< a href="javascript:window.opener='x';window.close();">Close< /a>

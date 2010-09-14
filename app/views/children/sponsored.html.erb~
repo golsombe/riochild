@@ -1,2 +1,0 @@
-<h3>Children Sponsored Since <%=@report_title%>
-@table.to_html

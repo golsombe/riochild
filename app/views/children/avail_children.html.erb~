@@ -1,1 +1,0 @@
-<%=render :active_scaffold => 'children', :conditions=> ['? not between sponsor_being and sponsor_expire or sponsor_being is null ',Date.today] -%>

@@ -1,8 +1,0 @@
---- 
-family: 
-  fields: 
-    id: i.to_s
-    name: Imposter::Noun.multiple.camelize
-    sponsor_being: Date.today.to_s
-    sponsor_expire: (Date.today + 365).to_s
-  quantity: 10
