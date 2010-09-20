@@ -1,6 +1,7 @@
 class ChildImagesController < ApplicationController
 active_scaffold :child_image do |config|
 		config.columns = [:photograph]
+		config.update.columns=[:photograph,:photograph_primary]
 		config.show.link = false
 		config.update.link = false
 		config.search.link = false

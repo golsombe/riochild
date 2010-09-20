@@ -3,7 +3,7 @@ class Child < ActiveRecord::Base
 
 	has_many :family_children
 	has_many :child_teachers
-	has_many :teachers, :through=> :child_teachers
+	has_many :teacher, :through=> :child_teachers
 	has_many :families, :through=> :family_children
 	has_many :child_images
 	has_many :child_updates
@@ -20,7 +20,11 @@ class Child < ActiveRecord::Base
 	end
 
 	def sponsored
-		if Date.today >= sponsor_begin && Date.today <= sponsor_expire then true else false end
+		if (sponsor_begin <= Date.today && sponsor_expire >= Date.today rescue false) or (sponsor_begin <= Date.today && sponsor_expire.nil?)  then 
+			true
+		else
+			false
+		end
 	end
 end
 
