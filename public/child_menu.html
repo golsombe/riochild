@@ -1,0 +1,52 @@
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheets/menu_black.css" media="screen" />
+<script type="text/javascript" src="javascripts/jquery-latest.js"></script>
+<script type="text/javascript" src="javascripts/jquery.mb/jquery.metadata.js"></script>
+<script type="text/javascript" src="javascripts/jquery.mb/jquery.hoverIntent.js"></script>
+<script type="text/javascript" src="javascripts/jquery.mb//mbMenu.js"></script>
+
+<script type="text/javascript">
+
+$function() {$(".vertMenu").buildMenu(
+    {
+      template:"menuVoices.html",
+      menuWidth:170,
+      openOnRight:true,
+      menuSelector: ".menuContainer",
+      iconPath:"ico/",
+      hasImages:true,
+      fadeInTime:200,
+      fadeOutTime:200,
+      adjustLeft:0,
+      adjustTop:0,
+      opacity:.95,
+      openOnClick:false,
+      minZindex:200,
+      shadow:false,
+      hoverIntent:300,
+      submenuHoverIntent:300,
+      closeOnMouseOut:true
+    });}
+      
+      </script>
+      
+      <body>
+<div class="vertMenu">
+    <table class="rootVoices vertical" cellspacing='0' cellpadding='0' border='0'>
+      <tr><td class="rootVoice {menu: 'box_menu'}" >box menu</td></tr>
+      <tr><td class="rootVoice {menu: 'menu_12'}" >ajax menu</td></tr>
+      <tr><td class="rootVoice {menu: 'menu_1'}" >menu 1</td></tr>
+      <tr><td class="rootVoice {menu: 'menu_3'}" >menu 3</td></tr>
+    </table>
+  </div>
+  <div id="menu_2" class="mbmenu">
+    <a rel="title" class="{action: 'showMessage(\'menu_2.1\')', img: 'icon_13.png'}">choose one of these links</a>
+    <a class="{action: 'showMessage(\'menu_2.2\')'}">menu_2.2</a>
+    <a class="{menu: 'sub_menu_1', img: 'icon_14.png', disabled:true}">menu_2.3 (disabled)</a>
+    <a class="{menu: 'sub_menu_2', img: '24-tag-add.png'}">menu_2.4</a>
+    <a rel="separator"> </a>
+    <a class="{action: 'showMessage(\'menu_2.4\')'}">menu_2.5</a>
+  </div>
+      </body>
+      
+      </head>
