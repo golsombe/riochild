@@ -1,19 +1,299 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--
+  ~ jquery.mb.components
+  ~ Copyright (c) 2001-2010. Matteo Bicocchi (Pupunzi); Open lab srl, Firenze - Italy
+  ~ email: info@pupunzi.com
+  ~ site: http://pupunzi.com
+  ~
+  ~ Licences: MIT, GPL
+  ~ http://www.opensource.org/licenses/mit-license.php
+  ~ http://www.gnu.org/licenses/gpl.html
+  -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Children: <%= controller.action_name %></title>
+<link rel="stylesheet" type="text/css" href="css/menu_black.css" media="screen" />
   <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'layout-default-latest.css' %>
   <%= javascript_include_tag :defaults %> 
+  <%= javascript_include_tag 'jquery-latest.js' %> 
+  <%= javascript_include_tag 'jquery-ui-latest.js' %> 
+  <%= javascript_include_tag 'jquery.layout-latest.js' %> 
+<!--  <%= javascript_include_tag '/inc/jquery.metadata.js' %> 
+  <%= javascript_include_tag '/inc/jquery.hoverIntent.js' %> 
+  <%= javascript_include_tag '/inc/jquery.mbMenu.js' %>-->
+
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>-->
+<script type="text/javascript" src="inc/jquery.metadata.js"></script>
+<script type="text/javascript" src="inc/jquery.hoverIntent.js"></script>
+<script type="text/javascript" src="inc/mbMenu.js"></script>
   <%= active_scaffold_includes %>
   <%= calendar_date_select_includes %>
+
+	<style type="text/css">
+	  body  a.style{
+	    color:#AF3002;
+	    font-family:sans-serif;
+	    font-size:13px;
+	    text-decoration:none;
+	  }
+	</style>
+
+
+	<style type="text/css">
+
+	  body  a.style{
+	    color:#AF3002;
+	    font-family:sans-serif;
+	    font-size:13px;
+	    text-decoration:none;
+	  }
+
+	  .wrapper{
+	    font-family:Arial, Helvetica, sans-serif;
+	    margin-top:0px;
+	    margin-left:0px;
+	  }
+
+	  .wrapper h1{
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size:26px;
+	  }
+	  button{
+	    padding:4px;
+	    display:inline-block;
+	    cursor:pointer;
+	    font:12px/14px Arial, Helvetica, sans-serif;
+	    color:#666;
+	    border:1px solid #999;
+	    background-color:#eee;
+	    -moz-border-radius:10px;
+	    -webkit-border-radius:10px;
+	    -moz-box-shadow:#999 2px 0px 3px;
+	    -webkit-box-shadow:#999 2px 0px 3px;
+	    margin-bottom:4px;
+	  }
+	  button:hover{
+	    color:#aaa;
+	    background-color:#000;
+	  }
+	  :focus {
+	    outline: 0;
+	  }
+
+	  span.btn{
+	    padding:10px;
+	    display:inline-block;
+	    cursor:pointer;
+	    font:12px/14px Arial, Helvetica, sans-serif;
+	    color:#aaa;
+	    background-color:#eee;
+	    -moz-border-radius:10px;
+	    -webkit-border-radius:10px;
+	    -moz-box-shadow:#999 2px 0px 3px;
+	    -webkit-box-shadow:#999 2px 0px 3px;
+	  }
+	  span.btn:hover{
+	    background-color:#999;
+	  }
+	  
+	  .msgBox{
+	    position:absolute;
+	    width:250px;
+	    height:60px;
+	    background:silver;
+	    -moz-box-shadow:#999 2px 0px 3px;
+	    -webkit-box-shadow:#999 2px 0px 3px;    
+	    -moz-border-radius:10px;
+	    -webkit-border-radius:10px;
+	    padding:10px;
+	    padding-top:30px;
+	    top:10px;
+	    right:10px;
+	    font:20px/24px Arial, Helvetica, sans-serif;
+	  }
+
+	</style>
+
+
+<script type="text/javascript">
+  $(function(){
+    $(".myMenu").buildMenu(
+    {
+      template:"menuVoices.html",
+      additionalData:"pippo=1",
+      menuWidth:200,
+      openOnRight:false,
+      menuSelector: ".menuContainer",
+      iconPath:"ico/",
+      hasImages:true,
+      fadeInTime:100,
+      fadeOutTime:300,
+      adjustLeft:2,
+      minZindex:"auto",
+      adjustTop:10,
+      opacity:.95,
+      shadow:false,
+      shadowColor:"#ccc",
+      hoverIntent:0,
+      openOnClick:true,
+      closeOnMouseOut:false,
+      closeAfter:1000,
+      submenuHoverIntent:200
+    });
+
+    $(".vertMenu").buildMenu(
+    {
+      template:"menuVoices.html",
+      menuWidth:170,
+      openOnRight:true,
+      menuSelector: ".menuContainer",
+      iconPath:"ico/",
+      hasImages:true,
+      fadeInTime:200,
+      fadeOutTime:200,
+      adjustLeft:0,
+      adjustTop:0,
+      opacity:.95,
+      openOnClick:false,
+      minZindex:200,
+      shadow:false,
+      hoverIntent:300,
+      submenuHoverIntent:300,
+      closeOnMouseOut:true
+    });
+
+  });
+
+  function recallcMenu(el){
+    if (!el) el= $.mbMenu.lastContextMenuEl;
+    var cmenu=+$(el).attr("cmenu");
+    $(cmenu).remove();
+  }
+
+ 
+  function showMessage(msg){
+    var msgBox=$("<div>").addClass("msgBox");
+    $("body").append(msgBox);
+    msgBox.append("You click on: <br>"+msg);
+    setTimeout(function(){msgBox.fadeOut(500,function(){msgBox.remove();})},3000)
+  }
+
+</script>
+
+	<script type="text/javascript">
+
+	var myLayout;
+
+	$(document).ready(function () {
+
+		// this layout could be created with NO OPTIONS - but showing some here just as a sample...
+		// myLayout = $('body').layout(); -- syntax with No Options
+
+		myLayout = $('body').layout({
+
+		//	enable showOverflow on west-pane so popups will overlap north pane
+			west__showOverflowOnHover: true
+
+		//	reference only - these options are NOT required because are already the 'default'
+		,	closable:				true	// pane can open & close
+		,	resizable:				true	// when open, pane can be resized 
+		,	slidable:				true	// when closed, pane can 'slide' open over other panes - closes on mouse-out
+
+		//	some resizing/toggling settings
+		//	some pane-size settings
+		,	west__minSize:			100
+		,	east__size:				300
+		,	east__minSize:			200
+		,	east__maxSize:			Math.floor(screen.availWidth / 2) // 1/2 screen width
+		});
+
+		// add event to the 'Close' button in the East pane dynamically...
+		myLayout.addCloseBtn('#btnCloseEast', 'east');
+
+		// add event to the 'Toggle South' buttons in Center AND South panes dynamically...
+		//myLayout.addToggleBtn('.south-toggler', 'south');
+
+		// add MULTIPLE events to the 'Open All Panes' button in the Center pane dynamically...
+		//myLayout.addOpenBtn('#openAllPanes', 'west');
+		//myLayout.addOpenBtn('#openAllPanes', 'east');
+		myLayout.close('east');
+
+ 	});
+
+	</script>
+
+
 </head>
 <body>
 
-<p style="color: green"><%= flash[:notice] %></p>
+<!-- manually attach allowOverflow method to pane -->
 
-<%= yield %>
+<!-- allowOverflow auto-attached by option: west__showOverflowOnHover = true -->
+<div class="ui-layout-west">
+	<div class="wrapper">
+	  <br/>
+	  <br/>
+	  <br/>
+	  <br/>
+	  <!-- start vertical menu -->
+	  <div class="vertMenu">
+	    <table class="rootVoices vertical" cellspacing='0' cellpadding='0' border='0'>
+	      <tr><td class="rootVoice {menu: 'box_menu'}" ><div><img src="images/student.png" height=50px width=50px/>Children</div></td></tr>
+	      <tr><td class="rootVoice {menu: 'menu_1'}" ><div><img src="images/teacher.png" height=50px width=50px/>Teachers</td></tr>
+	    </table>
+	  </div>
+	  <!-- end vertical menu -->
+
+	  <!-- menues -->
+	  <div id="box_menu" class="mbmenu boxMenu">
+	    <table style="border:0;" >
+	      <tr>
+		<td>
+		  <div style="height:130px"><img src="images/tile1.png" alt="patapage" width="80"></div>
+		  <a href="/children">Home</a>
+		  <a href="/children/show/1">Bio Show</a>
+		  <a href="/children/edit/1">Basic Bio Edit</a>
+		  <a href="/children/edit/1">Detailed Bio Edit</a>
+		</td>
+		<td>
+		  <div style="height:130px;"><img src="images/tile2.png" alt="bugsvoice" width="80"> Reports</div>
+		  <a href="http://bugsvoice.com/applications/bugsVoice/site/details.jsp" target="_blank">Single Child</a>
+		  <a href="http://bugsvoice.com/applications/bugsVoice/site/aboutHelp.jsp" target="_blank">Available Children</a>
+		  <a href="http://bugsvoice.com/applicoations/bugsVoice/site/access/login.jsp" target="_blank">Sponsored Children</a>
+		  <a href="http://bugsvoice.com/applications/bugsVoice/site/access/login.jsp" target="_blank">Expiring in 30 days</a>
+		</td>
+		<td>
+		  <div style="height:130px"><img src="images/tile3.png" alt="bugsvoice" width="80"></div>
+		  <a href="http://devineu.eu/home.page" target="_blank">Home</a>
+		  <a href="http://devineu.eu/mission.page" target="_blank">Mission</a>
+		  <a href="http://devineu.eu/interviewyourself.page" target="_blank">Interview yourself</a>
+		  <a href="http://devineu.eu/getInterviewed.page" target="_blank">Get interviewed</a>
+		</td>
+	      </tr>
+	    </table>
+	  </div>
+	  <div id="menu_1" class="mbmenu">
+	    <a href="/teachers" class="{img: 'ico_view.gif'}" >Home</a> <!-- menuvoice with href-->
+	    <a rel="separator"> </a> <!-- menuvoice separator-->
+	    <a href="/child_images" class="{img: 'ico_view.gif'}">Child Images</a> <!-- menuvoice disabled-->
+	  </div>
+	  <!-- end menus -->
+
+	</div>
+</div>
+<div class="ui-layout-east">
+	This is the east pane, closable, slidable and resizable
+
+	<!-- this button has its event added dynamically in document.ready -->
+	<p><button id="btnCloseEast">Close Me</button></p>
+
+</div>
+<div class="ui-layout-center">
+	<p style="color: green"><%= flash[:notice] %></p>
+	<%= yield %>
+</div>
 
 </body>
 </html>

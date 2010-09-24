@@ -62,6 +62,8 @@ ActiveRecord::Schema.define(:version => 20100629024852) do
     t.integer  "sisters"
     t.integer  "brothers"
     t.integer  "cousins"
+    t.boolean  "sponsored"
+    t.boolean  "birth_cert"
     t.date     "birthdate"
     t.date     "sponsor_begin"
     t.date     "sponsor_expire"

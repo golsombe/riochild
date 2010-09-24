@@ -20,7 +20,11 @@ class Child < ActiveRecord::Base
 	end
 
 	def sponsored
+<<<<<<< HEAD
+		if (sponsor_begin <= Date.today && sponsor_expire >= Date.today rescue false) or (sponsor_begin <= Date.today && sponsor_expire.nil? rescue false)  then 
+=======
 		if (sponsor_begin <= Date.today && sponsor_expire >= Date.today rescue false) or (sponsor_begin <= Date.today && sponsor_expire.nil?)  then 
+>>>>>>> 39de118c5f619fc25dec498bc0591c8d60a31233
 			true
 		else
 			false
