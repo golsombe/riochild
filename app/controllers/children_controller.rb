@@ -5,13 +5,10 @@ active_scaffold :child do |config|
 	config.columns = [:first, :last, :age, :sponsored]
 #:classroom, :sponsor_code,  :sponsor_begin, :sponsor_expire]
 	config.list.columns =[:child_primary_photo, :child_name, :age, :gender,:village, :teacher, :grade, :classroom, :sponsored]
-<<<<<<< HEAD
-	config.show.columns =     [:child_primary_photo, :child_name,:gender, :classroom, :village, :teacher,:sponsor_code, :father, :mother, :lives_with,:academic, :attendance, :does_homework, :favorite_season,:age, :grade, :sisters, :brothers, :cousins,:sponsored, :birth_cert,:birthdate, :sponsor_being, :sponsor_expire,:occupation, :helps_with, :activities, :favorite_bibleverse]
-=======
-	config.show.columns =[:child_primary_photo, :child_name, :village, :classroom, :teacher, :grade, :age, :gender, :sponsor_begin, :sponsor_expire, :sponsored]
->>>>>>> 39de118c5f619fc25dec498bc0591c8d60a31233
-	config.create.columns = [:first, :last, :age, :father, :mother, :lives_with, :birthdate]
-	config.update.columns = [:first, :last, :age, :father, :mother, :lives_with, :birthdate,:sponsor_begin, :sponsor_expire]
+	config.show.columns = [:child_primary_photo, :child_name,:gender, :classroom, :village, :teacher,:sponsor_code, :father, :mother, :lives_with,:academic, :attendance, :does_homework, :favorite_season,:age, :grade, :sisters, :brothers, :cousins,:sponsored, :birth_cert, :sponsor_begin, :sponsor_expire,:occupation, :helps_with, :activities, :favorite_bibleverse,:bday]
+#:birthdate
+	config.create.columns = [:first, :last ,:gender, :classroom, :village, :teacher,:sponsor_code, :father, :mother, :lives_with,:academic, :attendance, :does_homework, :favorite_season,:birthdate, :age, :grade, :sisters, :brothers, :cousins,:sponsored, :birth_cert, :sponsor_begin, :sponsor_expire,:occupation, :helps_with, :activities, :favorite_bibleverse]
+	config.update.columns = [:first, :last ,:gender, :classroom, :village, :teacher,:sponsor_code, :father, :mother, :lives_with,:academic, :attendance, :does_homework, :favorite_season,:birthdate, :age, :grade, :sisters, :brothers, :cousins,:sponsored, :birth_cert, :sponsor_begin, :sponsor_expire,:occupation, :helps_with, :activities, :favorite_bibleverse]
 	config.nested.add_link("Updates", [:child_updates])
 	config.nested.add_link("Images", [:child_images])
 	config.nested.add_link("Teacher", [:child_teachers])

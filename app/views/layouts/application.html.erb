@@ -13,23 +13,20 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Children: <%= controller.action_name %></title>
-<link rel="stylesheet" type="text/css" href="css/menu_black.css" media="screen" />
+  <%= stylesheet_link_tag '/css/menu_black.css'%>
   <%= stylesheet_link_tag 'scaffold' %>
   <%= stylesheet_link_tag 'layout-default-latest.css' %>
   <%= javascript_include_tag :defaults %> 
   <%= javascript_include_tag 'jquery-latest.js' %> 
   <%= javascript_include_tag 'jquery-ui-latest.js' %> 
   <%= javascript_include_tag 'jquery.layout-latest.js' %> 
-<!--  <%= javascript_include_tag '/inc/jquery.metadata.js' %> 
+  <%= javascript_include_tag '/inc/jquery.metadata.js' %> 
   <%= javascript_include_tag '/inc/jquery.hoverIntent.js' %> 
-  <%= javascript_include_tag '/inc/jquery.mbMenu.js' %>-->
-
-<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>-->
-<script type="text/javascript" src="inc/jquery.metadata.js"></script>
-<script type="text/javascript" src="inc/jquery.hoverIntent.js"></script>
-<script type="text/javascript" src="inc/mbMenu.js"></script>
+  <%= javascript_include_tag '/inc/mbMenu.js' %>
   <%= active_scaffold_includes %>
   <%= calendar_date_select_includes %>
+
+
 
 	<style type="text/css">
 	  body  a.style{
@@ -183,14 +180,13 @@
 </script>
 
 	<script type="text/javascript">
-
 	var myLayout;
 
 	$(document).ready(function () {
 
 		// this layout could be created with NO OPTIONS - but showing some here just as a sample...
 		// myLayout = $('body').layout(); -- syntax with No Options
-
+	
 		myLayout = $('body').layout({
 
 		//	enable showOverflow on west-pane so popups will overlap north pane
@@ -221,7 +217,6 @@
 		myLayout.close('east');
 
  	});
-
 	</script>
 
 
@@ -240,8 +235,8 @@
 	  <!-- start vertical menu -->
 	  <div class="vertMenu">
 	    <table class="rootVoices vertical" cellspacing='0' cellpadding='0' border='0'>
-	      <tr><td class="rootVoice {menu: 'box_menu'}" ><div><img src="images/student.png" height=50px width=50px/>Children</div></td></tr>
-	      <tr><td class="rootVoice {menu: 'menu_1'}" ><div><img src="images/teacher.png" height=50px width=50px/>Teachers</td></tr>
+	      <tr><td class="rootVoice {menu: 'box_menu'}" ><div><img src="/images/tile1.png" height=50px width=50px/>Administration</div></td></tr>
+	      <tr><td class="rootVoice {menu: 'menu_1'}" ><div><img src="/images/tile2.png" height=50px width=50px/>Reports</td></tr>
 	    </table>
 	  </div>
 	  <!-- end vertical menu -->
@@ -251,25 +246,21 @@
 	    <table style="border:0;" >
 	      <tr>
 		<td>
-		  <div style="height:130px"><img src="images/tile1.png" alt="patapage" width="80"></div>
+		  <div style="height:130px"><img src="/images/student.png" alt="patapage" width="80"> Children</div>
 		  <a href="/children">Home</a>
 		  <a href="/children/show/1">Bio Show</a>
 		  <a href="/children/edit/1">Basic Bio Edit</a>
 		  <a href="/children/edit/1">Detailed Bio Edit</a>
 		</td>
 		<td>
-		  <div style="height:130px;"><img src="images/tile2.png" alt="bugsvoice" width="80"> Reports</div>
-		  <a href="http://bugsvoice.com/applications/bugsVoice/site/details.jsp" target="_blank">Single Child</a>
-		  <a href="http://bugsvoice.com/applications/bugsVoice/site/aboutHelp.jsp" target="_blank">Available Children</a>
-		  <a href="http://bugsvoice.com/applicoations/bugsVoice/site/access/login.jsp" target="_blank">Sponsored Children</a>
-		  <a href="http://bugsvoice.com/applications/bugsVoice/site/access/login.jsp" target="_blank">Expiring in 30 days</a>
+		  <div style="height:130px;"><img src="/images/teacher.png" alt="bugsvoice" width="80"> Teachers</div>
+		  <a href="/teachers">Home</a>
+		  <a href="/teachers/show/1">Bio</a>
 		</td>
 		<td>
-		  <div style="height:130px"><img src="images/tile3.png" alt="bugsvoice" width="80"></div>
-		  <a href="http://devineu.eu/home.page" target="_blank">Home</a>
-		  <a href="http://devineu.eu/mission.page" target="_blank">Mission</a>
-		  <a href="http://devineu.eu/interviewyourself.page" target="_blank">Interview yourself</a>
-		  <a href="http://devineu.eu/getInterviewed.page" target="_blank">Get interviewed</a>
+		  <div style="height:130px"><img src="/images/frame.png" alt="child_images" width="80"> Child Images</div>
+		  <a href="/child_images">Home</a>
+		  <a href="/child_images/show/1">Show Image</a>
 		</td>
 	      </tr>
 	    </table>
