@@ -1,0 +1,13 @@
+  
+<%= image_tag @record.child_images.find(:first, :conditions=> 'photograph_primary=1').photograph.url(:large), :width=> "30%"  rescue nil%>
+<p> My name is <%=@record.name%><% if @record.age != nil then %> and I'm <%=@record.age%> years old<%end%>.<% if @record.gender != nil then%> I'm a little <%=if @record.gender=='F' then 'girl' else 'boy' end%><br><%else%><br>I'm <%end%>
+living in <%=@record.village %>. I'm in the <%=@record.grade.ordinalize %> grade with my <%=@record.classroom %> class. <br>
+My teacher is <%=@record.teacher  %>.
+<div>
+	<div style="width:45%;float:left">
+		<%= render :active_scaffold => 'child_updates', :constraints => {:child_id => @record.id} -%>
+	</div>
+	<div style="width:45%">
+		<%= render :active_scaffold => 'child_images', :constraints => {:child_id => @record.id} -%>
+	</div>
+</div>

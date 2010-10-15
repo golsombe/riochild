@@ -1,0 +1,1 @@
+<%=render :active_scaffold => 'children', :action=> 'show', :conditions=> ['? not between sponsor_begin and sponsor_expire or sponsor_begin is null ',Date.today], :limit=> 5 -%>

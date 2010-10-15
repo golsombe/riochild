@@ -1,0 +1,15 @@
+json.children do
+  @record.each do |child|
+    json.child do
+      json.first child.first
+      json.last child.last
+      json.age child.age
+	cid = child.id.to_s rescue 0
+	pi = child.child_images[0].id rescue 0
+	nm = child.child_images[0].name rescue ''
+      json.photo_url  '/system/photographs/' + pi.to_s + '/thumbnail/' + nm
+      json.show_url '/children/' + cid + '?_method=get'
+      json.available_since child.created_at.strftime('%m/%d/%Y') rescue nil
+    end
+  end
+end

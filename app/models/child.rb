@@ -3,7 +3,7 @@ class Child < ActiveRecord::Base
 
 	has_many :family_children
 	has_many :child_teachers
-	has_many :teacher, :through=> :child_teachers
+	has_many :teachers, :through=> :child_teachers
 	has_many :families, :through=> :family_children
 	has_many :child_images
 	has_many :child_updates

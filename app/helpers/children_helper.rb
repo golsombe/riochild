@@ -13,6 +13,14 @@ def child_primary_photo_column(record)
 	end
 end
 
+def genderfull_column(record)
+	case record.gender.downcase
+		when 'f' then image_tag('female.png',:height=>30, :alt=>'Female', :title=> 'Female')
+		when 'm' then image_tag('male.png',:height=> 30, :alt=> 'Male',:title=> 'Male')
+		else 'undefined'
+	end
+end
+
 def child_name_column(record)
 	record.first + ' ' + record.last rescue nil
 end

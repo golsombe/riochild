@@ -22,6 +22,7 @@ Rails::Initializer.run do |config|
   config.gem 'thoughtbot-paperclip', :lib=>'paperclip', :source=> "http://gems.github.com"
   config.gem "thoughtbot-shoulda", :lib => "shoulda", :source => "http://gems.github.com"
   config.gem "ruport", :lib=> "ruport"
+  config.gem "rails", :version=> '2.3.5', :lib=> 'rails'
   #config.gem "pdf-writer", :lib=> "pdf/writer", :version=> 1.1
 
   # Only load the plugins named here, in the order given (default is alphabetical).
