@@ -25,5 +25,4 @@ def child_name_column(record)
 	record.first + ' ' + record.last rescue nil
 end
 
-
 end

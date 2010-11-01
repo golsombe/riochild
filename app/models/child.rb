@@ -14,6 +14,9 @@ class Child < ActiveRecord::Base
         validates_numericality_of    :age,:allow_nil=> true
 	validates_numericality_of    :grade, :allow_nil=> true
 
+	def sponsored
+		false
+	end
 
 	def name
 		"#{first} #{last}" rescue nil
@@ -23,12 +26,6 @@ class Child < ActiveRecord::Base
 		birthdate.strftime('%B %d, %Y') rescue nil
 	end
 
-	def sponsored
-		if (sponsor_begin <= Date.today && sponsor_expire >= Date.today rescue false) or (sponsor_begin <= Date.today && sponsor_expire.nil? rescue false)  then 
-			true
-		else
-			false
-		end
-	end
+
 end
 

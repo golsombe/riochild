@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100629024852) do
+ActiveRecord::Schema.define(:version => 20101101011109) do
 
   create_table "child_images", :force => true do |t|
     t.integer  "child_id"
@@ -46,7 +46,6 @@ ActiveRecord::Schema.define(:version => 20100629024852) do
     t.string   "last"
     t.string   "middle"
     t.string   "gender"
-    t.string   "classroom"
     t.string   "village"
     t.string   "teacher"
     t.string   "sponsor_code"
@@ -61,9 +60,6 @@ ActiveRecord::Schema.define(:version => 20100629024852) do
     t.integer  "grade"
     t.integer  "sisters"
     t.integer  "brothers"
-    t.integer  "cousins"
-    t.boolean  "sponsored"
-    t.boolean  "birth_cert"
     t.date     "birthdate"
     t.date     "sponsor_begin"
     t.date     "sponsor_expire"
@@ -73,6 +69,8 @@ ActiveRecord::Schema.define(:version => 20100629024852) do
     t.text     "favorite_bibleverse"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "birth_cert"
+    t.string   "alt_last"
   end
 
   create_table "families", :force => true do |t|
@@ -120,6 +118,10 @@ ActiveRecord::Schema.define(:version => 20100629024852) do
     t.string   "school"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "photograph_file_name"
+    t.string   "photograph_content_type"
+    t.integer  "photograph_file_size"
+    t.datetime "photograph_updated_at"
   end
 
 end

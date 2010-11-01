@@ -4,12 +4,18 @@ class ChildrenController < ApplicationController
 active_scaffold :child do |config|
 	config.columns = [:first, :last, :age, :sponsored]
 	config.columns << :child_name
-#:classroom, :sponsor_code,  :sponsor_begin, :sponsor_expire]
-	config.list.columns =[:child_primary_photo, :child_name, :age, :genderfull,:village, :teachers, :grade, :classroom, :sponsored]
-	config.show.columns = [:child_primary_photo, :child_name,:gender, :classroom, :village, :teachers,:sponsor_code, :father, :mother, :lives_with,:academic, :attendance, :does_homework, :favorite_season,:age, :grade, :sisters, :brothers, :cousins,:sponsored, :birth_cert, :sponsor_begin, :sponsor_expire,:occupation, :helps_with, :activities, :favorite_bibleverse,:bday]
+	config.columns << :genderfull
+	config.columns << :sponsored
+	config.columns[:child_name].sort_by :sql => 'last'
+	config.columns[:child_name].search_sql = "CONCAT(first,' ',last)"
+	config.columns[:genderfull].label = 'Gender'
+	config.columns[:genderfull].sort_by :sql=> 'gender'
+	config.columns[:sponsored].sort_by :method => 'sponsored'
+	config.list.columns =[:child_primary_photo, :child_name, :age, :genderfull,:village, :teachers, :grade, :sponsored]
+	config.show.columns = [:child_primary_photo, :child_name,:gender, :village, :teachers,:sponsor_code, :father, :mother, :lives_with,:academic, :attendance, :does_homework, :favorite_season,:age, :grade, :sisters, :brothers, :sponsored, :birth_cert, :sponsor_begin, :sponsor_expire,:occupation, :helps_with, :activities, :favorite_bibleverse,:bday]
 #:birthdate
-	config.create.columns = [:first, :last ,:gender, :classroom, :village, :teachers,:sponsor_code, :father, :mother, :lives_with,:academic, :attendance, :does_homework, :favorite_season,:birthdate, :age, :grade, :sisters, :brothers, :cousins,:sponsored, :birth_cert, :sponsor_begin, :sponsor_expire,:occupation, :helps_with, :activities, :favorite_bibleverse]
-	config.update.columns = [:first, :last ,:gender, :classroom, :village, :teachers,:sponsor_code, :father, :mother, :lives_with,:academic, :attendance, :does_homework, :favorite_season,:birthdate, :age, :grade, :sisters, :brothers, :cousins,:sponsored, :birth_cert, :sponsor_begin, :sponsor_expire,:occupation, :helps_with, :activities, :favorite_bibleverse]
+	config.create.columns = [:first, :last ,:gender, :village, :teachers,:sponsor_code, :father, :mother, :lives_with,:academic, :attendance, :does_homework, :favorite_season,:birthdate, :age, :grade, :sisters, :brothers, :birth_cert, :sponsor_begin, :sponsor_expire,:occupation, :helps_with, :activities, :favorite_bibleverse]
+	config.update.columns = [:first, :last ,:gender, :village, :teachers,:sponsor_code, :father, :mother, :lives_with,:academic, :attendance, :does_homework, :favorite_season,:birthdate, :age, :grade, :sisters, :brothers, :birth_cert, :sponsor_begin, :sponsor_expire,:occupation, :helps_with, :activities, :favorite_bibleverse]
 	config.nested.add_link("Updates", [:child_updates])
 	config.nested.add_link("Images", [:child_images])
 	config.nested.add_link("Teacher", [:child_teachers])
@@ -38,7 +44,7 @@ def avail_children
 end #avail_children
 	
 def sponsored
-	@table = Child.report_table(:all, :only=> ["first","last", "age","classroom","teacher","village","gender"], :conditions=> ["sponsor_begin >= ?","2010-06-01"])
+	@table = Child.report_table(:all, :only=> ["first","last", "age","teacher","village","gender"], :conditions=> ["sponsor_begin >= ?","2010-06-01"])
 	@table.rename_columns {|c| c.to_s.camelize}
 	respond_to do |format|
 		format.html 

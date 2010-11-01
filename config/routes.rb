@@ -5,7 +5,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :child_images
 
-  map.resources :children
+  #map.resources :children
 
   map.resources :family_updates
 
