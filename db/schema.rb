@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101101011109) do
+ActiveRecord::Schema.define(:version => 20101101192758) do
 
   create_table "child_images", :force => true do |t|
     t.integer  "child_id"
@@ -23,6 +23,20 @@ ActiveRecord::Schema.define(:version => 20101101011109) do
     t.integer  "photograph_primary",      :limit => 1
   end
 
+  create_table "child_teacher_versions", :force => true do |t|
+    t.integer  "child_teacher_id"
+    t.integer  "version"
+    t.integer  "child_id"
+    t.integer  "teacher_id"
+    t.date     "valid_from"
+    t.date     "valid_until"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "child_teacher_versions", ["child_teacher_id"], :name => "index_child_teacher_versions_on_child_teacher_id"
+
   create_table "child_teachers", :force => true do |t|
     t.integer  "child_id"
     t.integer  "teacher_id"
@@ -31,6 +45,7 @@ ActiveRecord::Schema.define(:version => 20101101011109) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "version"
   end
 
   create_table "child_updates", :force => true do |t|
@@ -60,6 +75,8 @@ ActiveRecord::Schema.define(:version => 20101101011109) do
     t.integer  "grade"
     t.integer  "sisters"
     t.integer  "brothers"
+    t.boolean  "sponsored"
+    t.boolean  "birth_cert"
     t.date     "birthdate"
     t.date     "sponsor_begin"
     t.date     "sponsor_expire"
@@ -69,7 +86,6 @@ ActiveRecord::Schema.define(:version => 20101101011109) do
     t.text     "favorite_bibleverse"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "birth_cert"
     t.string   "alt_last"
   end
 
@@ -118,10 +134,10 @@ ActiveRecord::Schema.define(:version => 20101101011109) do
     t.string   "school"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "photograph_file_name"
-    t.string   "photograph_content_type"
-    t.integer  "photograph_file_size"
-    t.datetime "photograph_updated_at"
+    t.string   "teach_photo_file_name"
+    t.string   "teach_photo_content_type"
+    t.integer  "teach_photo_file_size"
+    t.datetime "teach_photo_updated_at"
   end
 
 end

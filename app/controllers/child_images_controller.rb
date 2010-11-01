@@ -1,5 +1,8 @@
 class ChildImagesController < ApplicationController
 active_scaffold :child_image do |config|
+		config.columns.add << :photograph_primary
+		config.columns[:photograph_primary].form_ui = :checkbox
+		config.columns[:photograph_primary].label = "Primary Photograph?"
 		config.columns = [:photograph, :photograph_primary, :child]
 		config.update.columns=[:photograph,:photograph_primary,:child]
 		config.create.link.label = 'New Image'

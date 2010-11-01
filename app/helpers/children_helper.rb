@@ -25,4 +25,9 @@ def child_name_column(record)
 	record.first + ' ' + record.last rescue nil
 end
 
+
+def gender_search_column(record, input_name)
+	select :record, :gender, options_for_select([["Male","M"],["Female","F"]]), {:include_blank => as_('- select -')}, input_name
+end
+
 end
