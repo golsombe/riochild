@@ -1,3 +1,6 @@
+RailsBaseURI /
+PassengerAppRoot /home/riococok/railsapps/riochilddev/current
+
 # General Apache options
 #AddHandler fastcgi-script .fcgi
 AddHandler cgi-script .cgi
