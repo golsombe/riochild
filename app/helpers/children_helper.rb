@@ -22,7 +22,7 @@ def genderfull_column(record)
 end
 
 def child_name_column(record)
-	record.first + ' ' + record.last rescue nil
+	[record.first, record.middle,record.last,record.alt_last].join(' ') rescue nil 
 end
 
 

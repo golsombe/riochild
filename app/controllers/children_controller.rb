@@ -3,7 +3,7 @@ class ChildrenController < ApplicationController
 
 active_scaffold :child do |config|
 	config.actions = [:nested, :create, :update, :list, :show, :field_search]
-	config.field_search.columns = :first,:last,:gender, :village, :sponsor_code, :father, :mother,:birth_cert,:birthdate, :sponsor_begin, :sponsor_expire,:teachers
+	config.field_search.columns =  :child_images,:first,:last,:gender, :village, :sponsor_code, :father, :mother,:birth_cert,:birthdate, :sponsor_begin, :sponsor_expire,:teachers
 	config.columns = [:first, :last, :age, :sponsored]
 	config.columns << :child_name
 	config.columns << :genderfull
@@ -16,12 +16,12 @@ active_scaffold :child do |config|
 	config.columns[:teachers].search_ui = :multi_select
 	config.columns[:teachers].collapsed = true
 	config.columns[:birth_cert].search_ui = :checkbox
-	config.list.columns =[:child_primary_photo, :child_name, :age, :genderfull,:village, :teachers, :grade, :sponsored]
+	config.list.columns =[:child_primary_photo, :child_images, :child_name, :age, :genderfull,:village, :teachers, :grade, :sponsored]
 #	config.show.columns = [:child_primary_photo, :child_name,:gender, :village, :teachers,:sponsor_code, :father, :mother, :lives_with,:academic, :attendance, :does_homework, :favorite_season,:age, :grade, :sisters, :brothers, :sponsored, :birth_cert, :sponsor_begin, :sponsor_expire,:occupation, :helps_with, :activities, :favorite_bibleverse,:bday]
 	config.show.columns = [:child_primary_photo, :child_name,:gender, :village, :teachers,:sponsor_code, :father, :mother, :lives_with,:academic, :attendance, :does_homework, :favorite_season,:age, :grade, :sisters, :brothers, :sponsored, :birth_cert, :sponsor_begin, :sponsor_expire,:bday]
 
-	config.create.columns = [:teachers,:first, :last ,:gender, :village,:sponsor_code, :father, :mother, :lives_with,:academic, :attendance, :does_homework, :favorite_season,:birthdate, :age, :grade, :sisters, :brothers, :birth_cert, :sponsor_begin, :sponsor_expire]
-config.update.columns = [:teachers,:first, :last ,:gender, :village,:sponsor_code, :father, :mother, :lives_with,:academic, :attendance, :does_homework, :favorite_season,:birthdate, :age, :grade, :sisters, :brothers, :birth_cert, :sponsor_begin, :sponsor_expire]
+	config.create.columns = [:teachers,:first, :middle,:last , :alt_last,:gender, :village,:sponsor_code, :father, :mother, :lives_with,:academic, :attendance, :does_homework, :favorite_season,:birthdate, :age, :grade, :sisters, :brothers, :birth_cert, :sponsor_begin, :sponsor_expire]
+config.update.columns = [:teachers,:first, :middle,:last ,:alt_last,:gender, :village,:sponsor_code, :father, :mother, :lives_with,:academic, :attendance, :does_homework, :favorite_season,:birthdate, :age, :grade, :sisters, :brothers, :birth_cert, :sponsor_begin, :sponsor_expire]
 	config.show.columns.add_subgroup 'Additional Fields' do |subgroup|
 		subgroup.add :occupation, :helps_with, :activities, :favorite_bibleverse
 		subgroup.collapsed = true
@@ -81,6 +81,52 @@ def sponsored
 	end
 	#send_data table.to_pdf, :content_type=> "application/pdf", :filename=> "Sponsored.pdf"
 end #sponsored
+
+def reprocess_images
+
+children = Child.find(:all)
+processed  = '/system/all_children/processed'
+
+children.each do |child|
+	ci = child.child_images.new()
+	img = '/system/all_children/' + child.first.downcase + ' ' + child.middle.downcase + '.jpg'
+	begin
+			puts "Processing... "
+			File.open(img,'rb') {|photo| ci.photograph = photo}
+			ci.photograph_primary = 1
+			ci.save
+			FileUtils.mv(img,processed)
+			puts img + " Moved... process complete."
+	rescue
+	end
+
+	begin
+		img = '/system/all_children/' + child.first.downcase + ' ' + child.last.downcase + '.jpg'
+		puts "Processing..."
+		File.open(img,'rb') {|photo| ci.photograph = photo}
+		ci.photograph_primary = 1
+		ci.save
+		FileUtils.mv(img,processed)
+		puts img + " Moved... process complete."
+	rescue
+	end
+
+	begin
+		img = '/system/all_children/' + child.first.downcase + ' ' + child.middle.downcase + ' ' + child.last.downcase + '.jpg'
+		puts "Processing..."
+		File.open(img,'rb') {|photo| ci.photograph = photo}
+		ci.photograph_primary = 1
+		ci.save
+		FileUtils.mv(img,processed)
+		puts img + " Moved... process complete."
+	rescue
+		puts "Could not find image for any combination of... " + [child.first, child.middle, child.last].join(' ') 
+	end
+end
+
+
+end
+
 
 end #class
 

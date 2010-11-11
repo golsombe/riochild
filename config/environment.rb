@@ -20,7 +20,6 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem 'thoughtbot-paperclip', :lib=>'paperclip', :source=> "http://gems.github.com"
-  config.gem "thoughtbot-shoulda", :lib => "shoulda", :source => "http://gems.github.com"
   config.gem "ruport", :lib=> "ruport"
   config.gem "rails", :version=> '2.3.5', :lib=> 'rails'
   #config.gem "pdf-writer", :lib=> "pdf/writer", :version=> 1.1
